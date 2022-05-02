@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-        InvokeRepeating("Move", 0f, 2f);
+        InvokeRepeating("Move", 0f, 1f);
     }
 
     // Update is called once per frame

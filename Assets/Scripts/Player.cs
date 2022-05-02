@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         if (Mathf.Abs(rb.velocity.x) > 0 || Mathf.Abs(rb.velocity.y) > 0)
         {
+            animator.SetBool("isMoving", true);
             if (rb.velocity.x < 0)
             {
                 spriteRenderer.flipX = true;
